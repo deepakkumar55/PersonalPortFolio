@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+Add these styles to your CSS file
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --bg-hover-color: #f1f1f1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark {
+  --bg-color: #1a202c;
+  --text-color: #e2e8f0;
+  --bg-hover-color: #2d3748;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Optional for Tailwind CSS */
+@layer base {
+  .dark {
+    --tw-bg-opacity: 1;
+    background-color: #1a202c;
+    color: #e2e8f0;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .dark .bg-white {
+    background-color: #1a202c;
   }
-  to {
-    transform: rotate(360deg);
+
+  .dark .text-gray-800 {
+    color: #e2e8f0;
+  }
+
+  .dark .text-gray-600 {
+    color: #a0aec0;
+  }
+
+  .dark .hover\:bg-gray-100:hover {
+    background-color: #2d3748;
+  }
+
+  .dark .hover\:text-gray-800:hover {
+    color: #edf2f7;
   }
 }
