@@ -93,7 +93,7 @@ const Blog = () => {
           ))}
         </div>
         {/* Pagination */}
-        <div className="flex pb-24 justify-center items-center mt-6">
+        <div className="flex pb-24 lg:pb-0 justify-center items-center mt-6">
           {[...Array(Math.ceil(posts.length / postsPerPage)).keys()].map((number) => (
             <button
               key={number + 1}

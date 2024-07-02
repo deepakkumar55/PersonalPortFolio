@@ -3,9 +3,8 @@ import { Photo } from '../Image/Photos';
 
 const Photos = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const photosPerPage = 12; // Number of photos per page
+  const photosPerPage = 12; 
 
-  // Logic to paginate photo array
   const indexOfLastPhoto = currentPage * photosPerPage;
   const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
   const currentPhotos = Photo.slice(indexOfFirstPhoto, indexOfLastPhoto);
@@ -18,7 +17,7 @@ const Photos = () => {
         <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-8 text-center">
           Photos
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="w-full h-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {currentPhotos.map((photo) => (
             <div key={photo.id} className="flex flex-col items-center">
               <img 
@@ -31,7 +30,7 @@ const Photos = () => {
         </div>
         
         {/* Pagination controls */}
-        <div className="flex pb-24 justify-center items-center mt-6">
+        <div className="flex pb-24 lg:pb-0 justify-center items-center mt-6">
           {[...Array(Math.ceil(Photo.length / photosPerPage)).keys()].map((number) => (
             <button 
               key={number + 1}
