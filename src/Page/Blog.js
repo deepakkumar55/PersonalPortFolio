@@ -45,7 +45,7 @@ const Blog = () => {
       "description": "JavaScript is a versatile language, and objects are a fundamental part of its architecture. Mastering object methods is crucial for any JavaScript...",
       "date": "Jun 26, 2024",
       "views": 18,
-      "URL": "hhttps://raajaryan.tech/ultimate-guide-to-mastering-javascript-object-methods",
+      "URL": "https://raajaryan.tech/ultimate-guide-to-mastering-javascript-object-methods",
       "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1719366463080/6fd54f54-6f1d-4837-9a5b-ea8ba2b9ba1e.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
     },
     {
@@ -57,13 +57,11 @@ const Blog = () => {
       URL: 'https://raajaryan.tech/javascript-array-method',
       image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1719365650839/dea5c364-d70e-4a4d-a31b-a1d952a7cfda.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp', 
     },
-    
-    
-    
     // Add more posts as needed
   ]);
+
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(6); // Number of posts per page
+  const [postsPerPage] = useState(9); // Number of posts per page
 
   // Pagination Logic
   const indexOfLastPost = currentPage * postsPerPage;
@@ -74,22 +72,20 @@ const Blog = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-100 dark:bg-gray-900 min-h-screen py-6 sm:py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">Blog Posts</h2>
-        <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+        <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-8 text-center">Blog Posts</h2>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {currentPosts.map((post) => (
             <Link key={post.id} to={post.URL} target="_blank" rel="noopener noreferrer" className="block">
-              <div className="flex flex-col bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
                 <img className="h-48 w-full object-cover" src={post.image} alt={post.title} />
-                <div className="p-6 flex flex-col justify-between flex-grow">
-                  <div>
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white">{post.title}</h3>
-                    <p className="mt-2 text-gray-600 dark:text-gray-400">{post.description}</p>
-                  </div>
-                  <div className="mt-4 flex items-center justify-between">
-                    <p className="text-sm font-medium text-indigo-600 dark:text-indigo-400">{post.date}</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">{post.views} views</p>
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{post.title}</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">{post.description}</p>
+                  <div className="flex justify-between items-center mt-4">
+                    <p className="text-sm font-medium text-gray-500">{post.date}</p>
+                    <p className="text-sm text-gray-500">{post.views} views</p>
                   </div>
                 </div>
               </div>
@@ -97,7 +93,7 @@ const Blog = () => {
           ))}
         </div>
         {/* Pagination */}
-        <div className="flex justify-center mt-8">
+        <div className="flex pb-24 justify-center items-center mt-6">
           {[...Array(Math.ceil(posts.length / postsPerPage)).keys()].map((number) => (
             <button
               key={number + 1}

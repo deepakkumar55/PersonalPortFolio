@@ -1,4 +1,9 @@
-Add these styles to your CSS file
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --bg-color: #ffffff;
   --text-color: #333333;
