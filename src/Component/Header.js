@@ -84,7 +84,7 @@ const DarkModeToggle = ({ darkMode, toggleDarkMode }) => (
 );
 
 const MobileMenu = ({ navItems, location }) => (
-  <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-gray-200 p-4 dark:bg-gray-800 flex justify-around shadow-md z-50">
+  <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-gray-200 pl-4 pb-4 dark:bg-gray-800 flex justify-around shadow-md z-50">
     {navItems.map((item) => (
       <Link
         key={item.path}
