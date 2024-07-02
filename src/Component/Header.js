@@ -27,7 +27,6 @@ const Header = () => {
     { path: '/project', name: 'Project', icon: <FaCode /> },
     { path: '/photos', name: 'Photos', icon: <FaCamera /> },
     { path: '/blog', name: 'Blog', icon: <FaBlog /> },
-    { path: '/contact', name: 'Contact', icon: <FaEnvelope /> },
   ];
 
   return (
