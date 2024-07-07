@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const ErrorPage = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 md:p-10 rounded-lg shadow-lg text-center max-w-md w-full">
+    <div className="flex items-center justify-center min-h-screen dark:bg-gray-800 dark:text-100 bg-gray-100">
+      <div className="bg-white  p-8 md:p-10 rounded-lg shadow-lg text-center max-w-md w-full">
         <h1 className="text-6xl font-bold text-red-600">404</h1>
         <p className="mt-4 text-2xl text-gray-700">Page Not Found</p>
         <p className="mt-2 text-gray-500">The page you're looking for doesn't exist or has been moved.</p>
