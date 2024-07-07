@@ -8,7 +8,7 @@ import Project from "./Page/Project";
 import About from "./Page/About";
 import Contact from "./Page/Contact";
 import ErrorPage from "./Page/Error";
-
+import Github from "./Page/Github";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
                 <Route path="/project" element={<Project />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/github" element={<Github />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
             <Footer />

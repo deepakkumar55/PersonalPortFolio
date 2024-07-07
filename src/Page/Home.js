@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FaLinkedin, FaGithub, FaTwitter, FaTelegramPlane, FaInstagram, FaDev } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaTwitter, FaTelegramPlane, FaInstagram, FaDev, FaUser } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import profilePhoto from '../Image/profile-photo.jpg';
 
 const Home = () => {
@@ -26,10 +27,11 @@ const Home = () => {
             {/* Main Content */}
             <div className="flex-1 z-10 flex flex-col items-center md:items-center justify-center text-center md:text-left">
                 <h2 className="text-4xl md:text-6xl font-extrabold text-[#002057] dark:text-[#e0e0e0]">
-                    <span className="text-3xl">Hi There,</span> <br /> I'm Deepak <span className="text-[#ff7b00]">Kumar</span>
+                    <span className="text-3xl block">Hi There,</span>
+                    I'm Deepak <span className="text-[#ff7b00]">Kumar</span>
                 </h2>
-                <p className={`text-2xl md:text-3xl text-gray-800 dark:text-gray-200 font-semibold py-4 transition-opacity duration-500 `}>
-                    I'm  <span className={`text-red-700 dark:text-red-400 ${TransitionEvent ? 'left-0' : 'right-100'}`}>{roles[currentRole]}</span>
+                <p className={`text-2xl md:text-3xl text-gray-800 dark:text-gray-200 font-semibold py-4 transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
+                    I'm a <span className="text-red-700 dark:text-red-400">{roles[currentRole]}</span>
                 </p>
 
                 {/* Social Links */}
@@ -78,16 +80,23 @@ const Home = () => {
                     />
                 </div>
 
-                {/* Download Resume Button */}
-                <div className="mt-8">
+                {/* Buttons */}
+                <div className="mt-8 flex space-x-4">
                     <a
                         href="https://drive.google.com/file/d/1ahyUqDZnwApHfytQm9lkHJ9AlYaWu5Vn/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block px-6 py-2 rounded-full transition duration-500 text-white bg-green-600 shadow-md hover:bg-green-800"
                     >
-                        <span className="font-bold text-xl tracking-wide">Download Resume</span>
+                        <span className="font-bold text-1xl lg:text-xl tracking-wide">Download Resume</span>
                     </a>
+                    <Link
+                        to="/contact"
+                        className="inline-block px-6 py-2 rounded-full transition duration-500 text-white bg-blue-600 shadow-md hover:bg-blue-800 flex items-center space-x-2"
+                    >
+                        <span className="font-bold text-1xl lg:text-xl tracking-wide">Hire Me</span>
+                        <FaUser className="text-xl" />
+                    </Link>
                 </div>
             </div>
 
@@ -110,7 +119,7 @@ const SocialLink = ({ href, ariaLabel, icon, bgColor, hoverBgColor }) => (
         aria-label={ariaLabel}
         target="_blank"
         rel="noopener noreferrer"
-        className={`text-2xl leading-11 text-black dark:text-white bg-${bgColor} w-12 h-12 flex items-center justify-center rounded-full transition-all duration-200 hover:text-white hover:bg-${hoverBgColor}`}
+        className={`text-2xl leading-11 text-black dark:text-white w-12 h-12 flex items-center justify-center rounded-full transition-all duration-200 bg-${bgColor} hover:bg-${hoverBgColor} hover:text-white`}
     >
         {icon}
     </a>

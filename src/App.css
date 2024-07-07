@@ -49,3 +49,22 @@ body {
     color: #edf2f7;
   }
 }
+
+.repo-card {
+  transition: transform 0.3s ease-out;
+}
+
+.repo-card:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.3s ease, transform 0.3s ease-out;
+}
+
+.modal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
