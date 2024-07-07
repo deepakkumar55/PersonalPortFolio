@@ -33,7 +33,7 @@ const Header = () => {
     <>
       <header className="bg-white dark:bg-gray-900 shadow-md dark:shadow-lg fixed top-0 left-0 right-0 z-50">
         <div className="container mx-auto flex justify-between items-center p-5">
-          <Link to="/" className="text-3xl font-extrabold text-gray-800 dark:text-white  tracking-wide">
+          <Link to="/" className="text-3xl font-extrabold text-gray-800 dark:text-white uppercase tracking-wide">
             <span className="text-red-500 dark:text-blue-500">D</span>eepak
           </Link>
           <div className="flex items-center space-x-4">
