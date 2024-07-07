@@ -42,29 +42,47 @@ const Github = () => {
                         className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 cursor-pointer"
                     >
                         <div className="p-4">
-                            <h2 className="text-xl font-semibold text-[#002057] dark:text-[#e0e0e0]">{repo.name}</h2>
-                            <p className="text-gray-700 dark:text-gray-300 mt-2">{repo.description}</p>
-                        </div>
-                        <div className="flex justify-between items-center px-4 py-2 bg-gray-100 dark:bg-gray-700">
-                            <div className="flex items-center space-x-2">
-                                {repo.languages_url && (
-                                    <LanguagesList url={repo.languages_url} />
-                                )}
+                            <div className="flex justify-between items-center">
+                                <h2 className="text-xl font-semibold text-[#002057] dark:text-[#e0e0e0]">{repo.name}</h2>
+                                <span className="text-gray-500 dark:text-gray-400 text-sm">{repo.private ? 'Private' : 'Public'}</span>
                             </div>
-                            <span className="text-gray-700 dark:text-gray-300 flex items-center">
-                                <FaStar className="mr-1" /> {repo.stargazers_count}
-                            </span>
-                            <span className="text-gray-700 dark:text-gray-300 flex items-center">
-                                <FaCodeBranch className="mr-1" /> {repo.forks_count}
-                            </span>
-                            <a
-                                href={repo.html_url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-blue-600 dark:text-blue-400 hover:underline"
-                            >
-                                View on GitHub
-                            </a>
+                            <p className="text-gray-700 dark:text-gray-300 mt-2">{repo.description}</p>
+                            <div className="flex items-center mt-2">
+                                <span className="text-gray-700 dark:text-gray-300 flex items-center mr-4">
+                                    <FaStar className="mr-1" /> {repo.stargazers_count}
+                                </span>
+                                <span className="text-gray-700 dark:text-gray-300 flex items-center mr-4">
+                                    <FaCodeBranch className="mr-1" /> {repo.forks_count}
+                                </span>
+                                <a
+                                    href={repo.html_url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                                >
+                                    View on GitHub
+                                </a>
+                            </div>
+                            <div className="flex flex-wrap mt-2">
+                                {repo.topics.map((topic, index) => (
+                                    <span key={index} className="text-xs font-medium mr-2 mb-2 px-2 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
+                                        {topic}
+                                    </span>
+                                ))}
+                            </div>
+                            {repo.language && (
+                                <div className="flex items-center mt-2">
+                                    <span
+                                        className="rounded-full px-2 py-1 text-xs font-medium"
+                                        style={{
+                                            backgroundColor: getLanguageStyle(repo.language).bgColor,
+                                            color: "#ffffff",
+                                        }}
+                                    >
+                                        {repo.language}
+                                    </span>
+                                </div>
+                            )}
                         </div>
                     </div>
                 ))}
@@ -106,41 +124,5 @@ const Github = () => {
         </div>
     );
 }
-
-// Component to fetch and display languages used in each repo
-const LanguagesList = ({ url }) => {
-    const [languages, setLanguages] = useState([]);
-
-    useEffect(() => {
-        const fetchLanguages = async () => {
-            try {
-                const response = await axios.get(url);
-                const languageNames = Object.keys(response.data);
-                setLanguages(languageNames);
-            } catch (error) {
-                console.error("Error fetching languages:", error);
-            }
-        };
-
-        fetchLanguages();
-    }, [url]);
-
-    return (
-        <div className="flex items-center space-x-2">
-            {languages.slice(0, 2).map((language, index) => (
-                <span
-                    key={index}
-                    className="rounded-full px-2 py-1 text-xs font-medium"
-                    style={{
-                        backgroundColor: getLanguageStyle(language).bgColor,
-                        color: "#ffffff",
-                    }}
-                >
-                    {language}
-                </span>
-            ))}
-        </div>
-    );
-};
 
 export default Github;
