@@ -47,7 +47,7 @@ const Header = () => {
             </nav>
             <DarkModeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             <motion.a
-              href="https://github.com/deepakkumar55"
+              href="/github"
               className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-md shadow-md transition duration-300 flex items-center space-x-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
