@@ -36,7 +36,7 @@ export const projectlist = [
       description: 'A social media application allowing users to share posts, follow others, and interact with content.',
       image: '',
       technologies: ['React', 'Express', 'MySQL'],
-      github: 'https://github.com/example/social-media',
+      github: 'https://github.com/deepakkumar55/Social-Media-App',
       demo: 'https://example.com/social-media'
     },
     {
@@ -139,3 +139,224 @@ export const projectlist = [
       demo: 'https://example.com/video-streaming'
     },
   ];
+
+
+
+
+  // list of project 
+
+  /*
+  
+
+1. E-commerce Website
+   - Features: User authentication, product listing, shopping cart, payment gateway integration, order history.
+
+2. Social Media Platform
+   - Features: User profiles, friend requests, news feed, post creation, likes, comments, messaging.
+
+3. Blogging Platform
+   - Features: User authentication, post creation and editing, comments, categories, tags, search functionality.
+
+4. Project Management Tool
+   - Features: Task creation, assignment, deadlines, status updates, team collaboration, project timelines.
+
+5. Online Learning Platform
+   - Features: Course creation, user enrollment, video streaming, quizzes, progress tracking, discussion forums.
+
+6. Event Management System
+   - Features: Event creation, RSVPs, ticketing, attendee management, notifications, calendar integration.
+
+7. Real-time Chat Application
+   - Features: User authentication, chat rooms, direct messaging, real-time updates, emoji support, file sharing.
+
+8. Job Portal
+   - Features: Job listings, resume uploads, application tracking, employer profiles, job recommendations, search filters.
+
+9. Expense Tracker
+   - Features: Expense categories, budget tracking, visual charts, recurring expenses, income tracking, reports.
+
+10. Weather Forecast App
+    - Features: Real-time weather updates, location-based forecasts, weather maps, alerts, historical data.
+
+11. Recipe Sharing Platform
+    - Features: User profiles, recipe submission, ratings, comments, ingredient lists, search functionality.
+
+12. Online Marketplace
+    - Features: Product listings, seller profiles, user reviews, secure payments, order tracking, categories.
+
+13. Fitness Tracker
+    - Features: Workout logging, progress tracking, diet plans, exercise routines, community support, goal setting.
+
+14. Travel Blog
+    - Features: Destination guides, travel tips, photo galleries, user comments, trip planning tools, maps.
+
+15. Video Streaming Service
+    - Features: Video uploads, streaming, user subscriptions, playlists, comments, recommendations.
+
+16. Task Management App
+    - Features: To-do lists, priority levels, due dates, reminders, project organization, collaboration tools.
+
+17. Online Forum
+    - Features: User authentication, topic creation, threaded discussions, moderation tools, search functionality.
+
+18. Book Review Platform
+    - Features: Book listings, user reviews, ratings, recommendations, author profiles, reading lists.
+
+19. Music Streaming App
+    - Features: Song uploads, playlists, user profiles, streaming, recommendations, search functionality.
+
+20. Portfolio Website
+    - Features: Project showcase, contact form, resume upload, blog, testimonials, skills showcase.
+
+21. Food Delivery Service
+    - Features: Restaurant listings, menu browsing, order placement, delivery tracking, user reviews, payment integration.
+
+22. Dating App
+    - Features: User profiles, matching algorithm, messaging, likes, interests, photo uploads.
+
+23. Q&A Platform
+    - Features: Question posting, answers, voting, user profiles, tags, search functionality.
+
+24. Inventory Management System
+    - Features: Product catalog, stock tracking, order management, supplier information, reports, alerts.
+
+25. Customer Support Ticket System
+    - Features: Ticket creation, assignment, status tracking, user authentication, knowledge base, notifications.
+
+26. News Aggregator
+    - Features: News sources, categories, user preferences, bookmarks, comments, search functionality.
+
+27. Online Polling System
+    - Features: Poll creation, voting, results display, user authentication, comment sections, analytics.
+
+28. Language Learning App
+    - Features: Lessons, quizzes, progress tracking, multimedia content, user profiles, community forums.
+
+29. Personal Finance App
+    - Features: Budget planning, expense tracking, income management, visual charts, financial goals, reports.
+
+30. Auction Platform
+    - Features: Auction creation, bidding, user profiles, payment integration, notifications, history tracking.
+
+31. Health Monitoring System
+    - Features: User health data tracking, vital signs monitoring, medical history, reports, doctor appointments.
+
+32. Crowdfunding Platform
+    - Features: Project creation, funding goals, payment integration, backer management, progress updates.
+
+33. Language Translation Service
+    - Features: Text translation, document translation, user profiles, language pairs, history, translation requests.
+
+34. Collaborative Writing Tool
+    - Features: Document creation, real-time editing, version control, comments, user authentication.
+
+35. Personal Diary App
+    - Features: Daily entries, mood tracking, photo uploads, tags, search functionality, privacy settings.
+
+36. Virtual Whiteboard
+    - Features: Drawing tools, collaboration, real-time updates, file sharing, user authentication, session saving.
+
+37. Online Store for Digital Products
+    - Features: Product listings, digital downloads, user authentication, payment integration, reviews.
+
+38. Habit Tracker
+    - Features: Habit creation, reminders, progress tracking, visual charts, streaks, community support.
+
+39. Meditation and Mindfulness App
+    - Features: Guided meditations, progress tracking, reminders, user profiles, community forums.
+
+40. Virtual Classroom
+    - Features: Class creation, video conferencing, assignments, grading, student profiles, discussion forums.
+
+41. Recipe Recommendation System
+    - Features: Personalized recommendations, ingredient-based search, user ratings, meal planning.
+
+42. Travel Itinerary Planner
+    - Features: Trip planning, destination information, activity suggestions, user profiles, map integration.
+
+43. Stock Market Analysis Tool
+    - Features: Real-time stock data, portfolio management, charts, alerts, news integration, analysis tools.
+
+44. Online Survey Platform
+    - Features: Survey creation, response collection, analytics, user authentication, sharing options.
+
+45. Smart Home Dashboard
+    - Features: Device control, real-time monitoring, automation rules, notifications, user authentication.
+
+46. Gaming Community Platform
+    - Features: User profiles, game reviews, forums, event organization, friend connections, news updates.
+
+47. Freelance Marketplace
+    - Features: Project postings, freelancer profiles, bidding system, payment integration, reviews.
+
+48. Art Portfolio Website
+    - Features: Artwork galleries, artist profiles, contact form, blog, exhibitions, social media integration.
+
+49. Gardening Planner
+    - Features: Plant database, gardening tips, planting schedules, reminders, progress tracking.
+
+50. Pet Adoption Platform
+    - Features: Pet listings, adoption applications, user profiles, animal shelters, reviews, search functionality.
+
+51. Cooking Class Booking System
+    - Features: Class schedules, booking system, user profiles, instructor profiles, reviews.
+
+52. SaaS Billing System
+    - Features: Subscription plans, invoicing, payment processing, user management, reports.
+
+53. Online Quiz Platform
+    - Features: Quiz creation, question banks, user authentication, progress tracking, leaderboards.
+
+54. Customer Feedback System
+    - Features: Feedback collection, analysis, reporting, user authentication, notifications.
+
+55. Real Estate Listing Platform
+    - Features: Property listings, search filters, user profiles, contact forms, map integration, reviews.
+
+56. Event Ticketing System
+    - Features: Event creation, ticket sales, attendee management, user profiles, notifications.
+
+57. Virtual Museum Tour
+    - Features: Virtual tours, exhibit information, multimedia content, user profiles, feedback.
+
+58. Donation Management System
+    - Features: Donation tracking, user profiles, payment integration, reports, campaigns.
+
+59. Classified Ads Platform
+    - Features: Ad postings, categories, user profiles, messaging, search functionality, reviews.
+
+60. Online Debate Platform
+    - Features: Debate topics, user profiles, real-time participation, voting, comments.
+
+61. Language Exchange Community
+    - Features: User profiles, language pairing, messaging, video calls, progress tracking.
+
+62. Stock Photography Website
+    - Features: Photo uploads, categories, user profiles, licensing, search functionality.
+
+63. Digital Journal
+    - Features: Entry creation, multimedia support, tags, search functionality, privacy settings.
+
+64. Food Recipe API
+    - Features: Recipe database, API endpoints, ingredient search, nutrition information, user authentication.
+
+65. Budget Planning Tool
+    - Features: Budget creation, expense tracking, income management, visual charts, financial goals.
+
+66. Online Therapy Platform
+    - Features: Therapist profiles, session scheduling, video calls, user authentication, progress tracking.
+
+67. Collaborative Study Platform
+    - Features: Study groups, resource sharing, real-time collaboration, progress tracking, forums.
+
+68. Remote Job Board
+    - Features: Job listings, company profiles, application tracking, user profiles, search functionality.
+
+69. E-book Library
+    - Features: Book listings, reading progress, user reviews, categories, search functionality.
+
+70. Virtual Fitness Coach
+    - Features: Workout plans, progress tracking, video instructions, user profiles, community support.
+
+  
+  */
