@@ -1,5 +1,6 @@
 import pht1 from "./Project/project1.png";
 import pht2 from "./Screenshot from 2024-07-02 18-44-09.png";
+import pht3 from "./Project/project2.png";
 
 export const projectlist = [
     {
@@ -11,16 +12,16 @@ export const projectlist = [
       github: 'https://github.com/deepakkumar55/fashion-store-frontend',
       demo: 'https://fashion-store-frontend-dun.vercel.app/'
     },
-    
     {
-      id: 2,
-      title: 'Task Management System',
-      description: 'A task management system for teams to assign tasks, track progress, and manage deadlines.',
-      image: '',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      github: 'https://github.com/deepakkumar55/task-manager',
-      demo: 'https://task-manager-tan-six.vercel.app/'
-    },
+        id: 2,
+        title: 'Job Application Tracker',
+        description: 'A social media application allowing users to share posts, follow others, and interact with content.',
+        image: pht3,
+        technologies: ['React', 'Express', 'MySQL'],
+        github: 'https://github.com/deepakkumar55/Job-Application-Tracker',
+        demo: 'https://jobapplicationtracter.raajaryan.tech/'
+      },
+    
     {
       id: 3,
       title: 'Portfolio Website',
@@ -31,14 +32,14 @@ export const projectlist = [
       demo: 'https://deepak.raajaryan.tech/'
     },
     {
-      id: 4,
-      title: 'Social Media App',
-      description: 'A social media application allowing users to share posts, follow others, and interact with content.',
-      image: '',
-      technologies: ['React', 'Express', 'MySQL'],
-      github: 'https://github.com/deepakkumar55/Social-Media-App',
-      demo: 'https://example.com/social-media'
-    },
+        id: 4,
+        title: 'Task Management System',
+        description: 'A task management system for teams to assign tasks, track progress, and manage deadlines.',
+        image: '',
+        technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+        github: 'https://github.com/deepakkumar55/task-manager',
+        demo: 'https://task-manager-tan-six.vercel.app/'
+      },
     {
       id: 5,
       title: 'Weather App',
