@@ -15,7 +15,7 @@ export const projectlist = [
     {
         id: 2,
         title: 'Job Application Tracker',
-        description: 'A social media application allowing users to share posts, follow others, and interact with content.',
+        description: 'The Job Application Tracker is a web application designed to help users manage and track their job applications. It allows users to add, view, and manage their job applications with details such as company name, position, response status, and application date.',
         image: pht3,
         technologies: ['React', 'Express', 'MySQL'],
         github: 'https://github.com/deepakkumar55/Job-Application-Tracker',
