@@ -1,6 +1,9 @@
 import pht1 from "./Project/project1.png";
 import pht2 from "./Screenshot from 2024-07-02 18-44-09.png";
 import pht3 from "./Project/project2.png";
+import pht4 from "./Project/project3.png";
+import pht5 from "./Project/project4.png";
+import pht6 from "./Project/project5.png";
 
 export const projectlist = [
     {
@@ -35,28 +38,28 @@ export const projectlist = [
         id: 4,
         title: 'Task Management System',
         description: 'A task management system for teams to assign tasks, track progress, and manage deadlines.',
-        image: '',
+        image: pht5,
         technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
         github: 'https://github.com/deepakkumar55/task-manager',
         demo: 'https://task-manager-tan-six.vercel.app/'
       },
     {
       id: 5,
-      title: 'Weather App',
-      description: 'An application to display current weather conditions and forecasts.',
-      image: '',
+      title: 'Budget-Planning-Tool',
+      description: 'This web application helps you manage your budget, track expenses, and set financial goals efficiently.',
+      image: pht4,
       technologies: ['React', 'OpenWeatherMap API'],
-      github: 'https://github.com/example/weather-app',
-      demo: 'https://example.com/weather-app'
+      github: 'https://github.com/deepakkumar55/Budget-Planning-Tool',
+      demo: 'https://budget-planning-tool.vercel.app/'
     },
     {
       id: 6,
-      title: 'Blog Platform',
+      title: 'Raaj Blog`s',
       description: 'A blogging platform for creating and sharing articles.',
-      image: '',
+      image: pht6,
       technologies: ['React', 'Node.js', 'MongoDB'],
-      github: 'https://github.com/example/blog-platform',
-      demo: 'https://example.com/blog-platform'
+      github: 'https://github.com/deepakkumar55/Raaj-Blogs',
+      demo: 'https://blogs.raajaryan.tech/'
     },
     {
       id: 7,
