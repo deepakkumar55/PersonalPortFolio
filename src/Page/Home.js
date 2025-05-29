@@ -61,7 +61,7 @@ const Home = () => {
                 {/* Buttons */}
                 <div className="mt-8 flex space-x-4">
                     <motion.a
-                        href="https://drive.google.com/file/d/1ahyUqDZnwApHfytQm9lkHJ9AlYaWu5Vn/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1oCiRqD7VK-T0Q_zC0xDjXvcKj3b-3iq-/view"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block px-6 py-2 rounded-full transition duration-500 text-white bg-green-600 shadow-md hover:bg-green-800"
